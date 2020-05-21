@@ -16,7 +16,7 @@ In 2015 the project was renamed to Electron.
 
 And in 2016 Electron 1.0 was released as a platform for building desktop apps with web-technologies.
 
-## SLide 3
+## Slide 3
 ### Apps built with Electron
 Today this is the tool behind many popular apps you might be using every day.
 
@@ -26,11 +26,11 @@ Thousands of organizations spanning all industries use Electron to build cross-p
 
 And why is it so popular?
 
-## SLide 4
+## Slide 4
 ### It's even easier than you think
 As was said, Electron allows to create native applications with web technologies. It means that if you can build a website, you can build a desktop app. Electron takes care of the hard parts so you can focus on the core of your application.
 
-## SLide 5
+## Slide 5
 ### Hard parts
 Such things as updating, reporting, debugging, profiling are made easy for you. For instance, …
 * AutoUpdater enables apps to automatically update themselves.
@@ -40,16 +40,16 @@ Such things as updating, reporting, debugging, profiling are made easy for you. 
 *	ElectronForge, GruntElectronInstaller generate a Window installer.
 So, Electron takes care of all these hard and tedious parts of creating a desktop application so the user can focus on the core of his or her application.
 
-## SLide 6
+## Slide 6
 ### How does it work?
 On the front-end you build UI just like you would for a browser-based web-app and you can bring along to your favorite frameworks. You can use Angular, React, Vue, whatever you like. 
 
 But in the electron you also have access to NodeJS. That means you can access low-level APIs that you don`t normally have access to in a browser like the file system.
 
-## SLide 7
+## Slide 7
 Electron combines the front-end and back-end technologies and provides a bunch of other tools to work with native menus, the system tray and so on. Electron combines Chromium and NodeJS into a single runtime. That`s what enables us to run the HTML, CSS and JavaScript code as a desktop application.
 
-## SLide 8
+## Slide 8
 Electron applications have two mandatory processes, the main process, and the rendering process. 
 
 Each process has a different role to enact. 
@@ -58,67 +58,67 @@ Bootstrapping the application is performed by the main process. It can withstand
 
 On the other hand, the rendering process is spawned by the main process. The render processes will display the UI of the application. Each process takes advantage of Chromium’s multiprocess architecture and runs on its own thread.
 
-## SLide 9
+## Slide 9
 To put it simply, The purpose of the main process is to create web pages using a BrowserWindow Instance. The BrowserWindow Instance uses a renderer process to run each web page.
 
 Each app can have only one main process but can have many renderer processes.
 
 It is possible to communicate between the main and the renderer process as well.
 
-## SLide 10
+## Slide 10
 ### Electron App Example
 Let's see how fast and easy it is to use Electron on a small example. 
 
 Our app will consist of html file with markdown, css file with styles and js file with scripts. Render.js file will be completely empty – it's just recommended by the documentation to have it.
 
-## SLide 11
+## Slide 11
 Firstly, we need to install electron: 
 * `npm install -g electron` – install globally;
 * `npm install electron -save` – install locally;
 * `electon .` – run the project.
 
-## SLide 12
+## Slide 12
 In main.js we need to include some modules. The first one is `path` which let us work with paths to our files and directories. The second one is `url` which provides utilities for URL resolution and parsing. And finally, from the Electron we import such things as app and BrowserWindow.
 
-## SLide 13
+## Slide 13
 Here we basically create a BrowserWindow Instance and load index.html into the BrowserWindow.
 
-## SLide 14
+## Slide 14
 This code snippet says that when the application is ready, load the first window.
 
 Similarly, app can be used to perform other actions on various events. For example, it can be used to perform some action right before the application closes and so on.
 
-## SLide 15
+## Slide 15
 Here we create index.html file – our page:
 1.	Create a text box with id `Celsius`. Whenever anything is typed in this textbox, the `celsiusToFahrenheit()` function is called.
 2.	Create a text box with id `Fahrenheit`. Whenever anything is typed in this textbox, the `fahrenheitToCelsius()` function is called.
 3.	So, whenever a new value is typed in the Celsius text box, the value in the Fahrenheit text box displays the same temperature in Fahrenheit and otherwise.
 
-## SLide 16
+## Slide 16
 Then we need to add the script into our html. `Render.js` file is required. And right here we can write our functions.
 
 The `celsiusToFahrenheit()` function reads the value in the Celsius text box, converts it to Fahrenheit, and writes the new temperature into the Fahrenheit text box. The `fahrenheitToCelsius()` function does the exact opposite of this.
 
-## SLide 17
+## Slide 17
 Run `electron .` and we have this application.
 
-## SLide 18
+## Slide 18
 We also have native menu with lots of options created for us and not by us.
 
-## SLide 19
+## Slide 19
 We also have Chrome Dev Tools. We can edit our code and use it just like we would in the browser.
 
-## SLide 20
+## Slide 20
 Some lines of css code 
 
-## SLide 21
+## Slide 21
 and we have nice looking app. That`s it!
 
-## SLide 23
+## Slide 23
 ### Conclusion
 Overall, Electron takes care of most of the dynamic applications which use our browser as a platform to deliver their embedded features and help developers connect with a wider audience. 
 
-## SLide 24
+## Slide 24
 Hope I`ve managed to shed some light on what Electron is. 
 
 Thanks for your attention!
